@@ -1,0 +1,36 @@
+.headerContainer {
+  background-color: blanchedalmond;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerContainer img {
+  height: 40px;
+  margin: 10px 40px;
+}
+
+.headerCategories {
+  display: flex;
+  align-items: center;
+}
+
+.charactersHeader,
+.comicsHeader {
+  margin: 0 40px 0 0;
+  width: 120px;
+  text-align: center;
+}
+.comicsHeader {
+  background-color: lightblue;
+}
+
+.charactersHeader {
+  background-color: lightgreen;
+}
+/* .charactersHeader {
+  cursor: pointer;
+}
+.comicsHeader {
+  cursor: pointer;
+} */
