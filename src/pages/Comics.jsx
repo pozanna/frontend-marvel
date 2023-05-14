@@ -43,24 +43,34 @@ const Comics = () => {
 
   return (
     <div className="comics-page-container">
-      <input
-        value={query}
-        onChange={(event) => setQuery(event.target.value)}
-        className="search-input"
-        type="search"
-        placeholder="Recherche des comics"
-      />
-
+      <div className="comics-search-container">
+        <input
+          value={query}
+          onChange={(event) => setQuery(event.target.value)}
+          className="comics-search-input"
+          type="search"
+          placeholder="Recherche des comics"
+        />
+      </div>
       <div className="comics-container">
         {filteredData.map((comic) => {
           return (
             <article key={comic._id}>
+              <h3 className="comicsName">{comic.title}</h3>
               <img
+                className="comicsImage"
                 src={comic.thumbnail.path + "." + comic.thumbnail.extension}
                 alt={comic.title}
               />
-              <h2>{comic.title}</h2>
-              <p>{comic.description}</p>
+              {comic.description ? (
+                <div className="comicsDescription">
+                  <p>{comic.description}</p>{" "}
+                </div>
+              ) : (
+                <div className="no-description">
+                  <p>No description available.</p>
+                </div>
+              )}
             </article>
           );
         })}

@@ -3,4 +3,9 @@
 body {
   font-family: "Figtree", sans-serif;
   font-family: "Roboto", sans-serif;
+  background-color: white;
+}
+
+.appContainer {
+  padding: 0 32px 0 32px;
 }

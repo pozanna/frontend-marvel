@@ -42,14 +42,15 @@ const Characters = () => {
     <p>Loading ...</p>
   ) : (
     <div className="characters-page-container">
-      <input
-        value={query}
-        onChange={(event) => setQuery(event.target.value)}
-        className="search-input"
-        type="search"
-        placeholder="Recherche des heros"
-      />
-
+      <div className="characters-search-conrainer">
+        <input
+          value={query}
+          onChange={(event) => setQuery(event.target.value)}
+          className="characters-search-input"
+          type="search"
+          placeholder="Hero search"
+        />
+      </div>
       <div className="characters-container">
         {filteredData.map((hero) => {
           return (

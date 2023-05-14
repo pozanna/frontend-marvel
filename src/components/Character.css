@@ -1,0 +1,52 @@
+.character-container {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.heroName {
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.heroImage {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+}
+
+.heroDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  height: 160px;
+  margin-top: 10px;
+  text-align: justify;
+}
+.heroDescription p {
+  line-height: 1.5;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.no-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  height: 160px;
+  margin-top: 10px;
+  color: rgb(169, 169, 169);
+}
+
+.find-out-more {
+  border: none;
+  background-color: transparent;
+  color: blue;
+  cursor: pointer;
+  text-align: left;
+}

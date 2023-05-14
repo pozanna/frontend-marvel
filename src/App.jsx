@@ -13,7 +13,7 @@ import Comics from "./pages/Comics";
 
 function App() {
   return (
-    <>
+    <div className="appContainer">
       <Router>
         <Header />
         <Routes>
@@ -21,7 +21,7 @@ function App() {
           <Route path="/comics/:id" element={<Comics />} />
         </Routes>
       </Router>
-    </>
+    </div>
   );
 }
 
