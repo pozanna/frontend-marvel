@@ -49,7 +49,7 @@ const Comics = () => {
           onChange={(event) => setQuery(event.target.value)}
           className="comics-search-input"
           type="search"
-          placeholder="Recherche des comics"
+          placeholder="Search comics"
         />
       </div>
       <div className="comics-container">
