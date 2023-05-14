@@ -13,7 +13,9 @@ const Characters = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/characters");
+        const response = await axios.get(
+          "site--backend-marvel--4j5fk64yfzdn.code.run/characters"
+        );
         setData(response.data.results);
         setIsLoading(false);
       } catch (error) {
