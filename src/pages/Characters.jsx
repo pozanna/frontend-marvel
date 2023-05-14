@@ -14,7 +14,7 @@ const Characters = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "site--backend-marvel--4j5fk64yfzdn.code.run/characters"
+          "https://site--backend-marvel--4j5fk64yfzdn.code.run/characters"
         );
         setData(response.data.results);
         setIsLoading(false);
